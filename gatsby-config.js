@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Demo Midback Office`,
   },
   plugins: [`gatsby-plugin-react-helmet`,{
     resolve: `gatsby-plugin-typography`,
