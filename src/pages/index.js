@@ -31,7 +31,7 @@ export default () => (
     <h1></h1>
     <div>
       <form >
-        <label style={label}>First name1</label>
+        <label style={label}>First name</label>
         <input style={input}ype="text" value='Michael' />
         <label style={label}>Last name</label>
         <input style={input} type="text" value='Smith' />
