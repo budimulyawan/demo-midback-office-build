@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "demo-midback-office",
+  "description": "Demo Midback Office intergration with Smartpoint",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Budi Mulyawan <budi.mulyawan@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.45",
     "gatsby-link": "^1.6.17",
