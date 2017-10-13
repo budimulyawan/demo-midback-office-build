@@ -34,9 +34,12 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Midback Office Demo
+        <img style={{ margin: 0 }} src='http://manntravel.com.au/resources/images/logo.png' />
+        
         </Link>
         <ul style={{ listStyle: `none`, float: `right` }}>
+       
+          
         <ListLink to="/">Profile</ListLink>
         <ListLink to="/download/">Download</ListLink>
       </ul>
@@ -48,7 +51,7 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Mann Travel"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
