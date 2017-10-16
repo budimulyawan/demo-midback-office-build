@@ -31,13 +31,16 @@ class Profile extends React.Component {
     this.state = {
       firstName: "Michael",
       lastName: "Smith",
-      email: "michael.smith@gmail.com"
+      email: "michael.smith@gmail.com",
+      notepad: 'This booking has been paid',
     };
   }
 
   upload() {
     if (webBrowser) {
-      alert(webBrowser.sendTerminalCommand('N.' + this.state.lastName + '/' + this.state.firstName));
+      webBrowser.sendTerminalCommand('N.' + this.state.lastName + '/' + this.state.firstName);
+      webBrowser.sendTerminalCommand('MT.' + this.state.email);
+      webBrowser.sendTerminalCommand('NP.' + this.state.notepad);
     }
   }
 
@@ -52,6 +55,8 @@ class Profile extends React.Component {
           <input style={input} type="text" value={this.state.lastName} />
           <label style={label}>Email</label>
           <input style={input} type="email" value={this.state.email} />
+          <label style={label}>Notepad</label>
+          <input style={input} type="text" value={this.state.notepad} />
           <button style={button} onClick={this.upload.bind(this)}>
             Upload
           </button>
