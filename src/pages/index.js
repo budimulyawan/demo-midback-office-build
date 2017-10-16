@@ -41,6 +41,7 @@ class Profile extends React.Component {
       webBrowser.sendTerminalCommand('N.' + this.state.lastName + '/' + this.state.firstName);
       webBrowser.sendTerminalCommand('MT.' + this.state.email);
       webBrowser.sendTerminalCommand('NP.' + this.state.notepad);
+      alert('Profile has been moved, please close window and refresh Smartpoint(*R)');
     }
   }
 
