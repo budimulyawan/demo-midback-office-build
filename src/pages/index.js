@@ -29,16 +29,17 @@ class Profile extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      firstName: "Michael",
-      lastName: "Smith",
-      email: "michael.smith@gmail.com",
+      title: "Mr",
+      firstName: "Mukesh",
+      lastName: "Mann",
+      email: "mukesh@manntravel.com.au",
       notepad: 'This booking has been paid',
     };
   }
 
   upload() {
     if (webBrowser) {
-      webBrowser.sendTerminalCommand('N.' + this.state.lastName + '/' + this.state.firstName);
+      webBrowser.sendTerminalCommand('N.' + this.state.lastName + '/' + this.state.firstName + this.state.title);
       webBrowser.sendTerminalCommand('MT.' + this.state.email);
       webBrowser.sendTerminalCommand('NP.' + this.state.notepad);
       alert('Profile has been moved, please close window and refresh Smartpoint(*R)');
@@ -50,6 +51,8 @@ class Profile extends React.Component {
       <div>
         <h1>Profile</h1>
         <div>
+        <label style={label}>Title</label>
+          <input style={input} type="text" value={this.state.title} />
           <label style={label}>First name</label>
           <input style={input} type="text" value={this.state.firstName} />
           <label style={label}>Last name</label>
