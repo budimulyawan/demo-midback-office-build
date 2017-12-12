@@ -34,7 +34,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-        <img style={{ margin: 0 }} src='http://manntravel.com.au/resources/images/logo.png' />
+        <img style={{ margin: 0 }} src='https://www.intrepidgroup.travel/sites/intrepidgroup.travel/themes/bootstrap_intrepidgroup/images/logo_0.png' />
         
         </Link>
         <ul style={{ listStyle: `none`, float: `right` }}>
@@ -51,7 +51,7 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Mann Travel Payment Plus"
+      title="Intrepid Group Travel Payment Plus"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
