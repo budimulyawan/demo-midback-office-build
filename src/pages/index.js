@@ -32,8 +32,8 @@ class Profile extends React.Component {
       title: "Mr",
       firstName: "Darran",
       lastName: "Keil",
-      email: " Darran.keil@intrepidgroup.travel",
-      notepad: 'This booking has been paid',
+      email: "Darran.keil@intrepidgroup.travel",
+      notepad: 'Cost centre code XYZ123',
     };
   }
 
