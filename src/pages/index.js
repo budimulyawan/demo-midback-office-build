@@ -30,9 +30,9 @@ class Profile extends React.Component {
     super(props, context);
     this.state = {
       title: "Mr",
-      firstName: "Darran",
-      lastName: "Keil",
-      email: "Darran.keil@intrepidgroup.travel",
+      firstName: "Budi",
+      lastName: "Mulyawan",
+      email: "Budi.Mulyawan@mann.travel",
       notepad: 'Cost centre code XYZ123',
     };
   }

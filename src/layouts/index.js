@@ -34,7 +34,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-        <img style={{ margin: 0 }} src='https://www.intrepidgroup.travel/sites/intrepidgroup.travel/themes/bootstrap_intrepidgroup/images/logo_0.png' />
+        <img style={{ margin: 0 }} src='http://manntravel.com.au/resources/images/logo.png' />
         
         </Link>
         <ul style={{ listStyle: `none`, float: `right` }}>
