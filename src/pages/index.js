@@ -39,10 +39,11 @@ class Profile extends React.Component {
 
   upload() {
     if (webBrowser) {
-      webBrowser.sendTerminalCommand('N.' + this.state.lastName + '/' + this.state.firstName + this.state.title);
-      webBrowser.sendTerminalCommand('MT.' + this.state.email);
-      webBrowser.sendTerminalCommand('NP.' + this.state.notepad);
-      alert('Profile has been moved, please close window and refresh Smartpoint(*R)');
+      // webBrowser.sendTerminalCommand('N.' + this.state.lastName + '/' + this.state.firstName + this.state.title);
+      // webBrowser.sendTerminalCommand('MT.' + this.state.email);
+      // webBrowser.sendTerminalCommand('NP.' + this.state.notepad);
+      var name =  webBrowser.getPassengerNames();
+      alert(name);
     }
   }
 
